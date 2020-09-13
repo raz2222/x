@@ -82,7 +82,7 @@ h6 {
 #header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 15px 0;
-  background:black;;
+  background: black;
 }
 
 #header .logo h1 {
@@ -108,7 +108,7 @@ h6 {
 
 @media (max-width: 768px) {
   #header {
-    background: color: #2b2b2b;;
+    background: #2b2b2b;
   }
   #header .logo h1 {
     font-size: 28px;
@@ -135,7 +135,7 @@ h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #555555;
+  color: #fff;
   padding: 8px 0 12px 25px;
   transition: 0.3s;
   font-size: 14px;
@@ -172,7 +172,7 @@ h6 {
   visibility: hidden;
   padding: 10px 0;
   color: #2b2b2b;
-  box-shadow: 0px 0px 30px black);
+  box-shadow: 0px 0px 30px black;
   transition: ease all 0.3s;
   border-radius: 5px;
 }
@@ -192,7 +192,7 @@ h6 {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
-  color: #222222;
+  color: #fff;
 }
 
 .nav-menu .drop-down ul a:hover,
@@ -401,9 +401,8 @@ h6 {
   padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
-  color: orange
-  border: 2px solid  orange;
-  
+  color: orange;
+  border: 2px solid orange;
 }
 
 #hero .btn-get-started:hover {
@@ -654,7 +653,7 @@ section {
 .counts .content .count-box i {
   display: block;
   font-size: 36px;
-  color:orange;
+  color: orange;
   float: left;
 }
 
@@ -1615,16 +1614,105 @@ section {
 }
 
 #footer .footer-links a:hover {
-  color: 
-  orange;
+  color: orange;
 }
 
-
-
-
 canvas {
-
- 
   position: absolute;
 }
 
+.loader {
+  position: absolute;
+  // width:50px;
+  // height:50px;
+
+  animation: infinite-spinning 4s infinite;
+  animation-timing-function: linear;
+  transform-origin: 335% 500%;
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.moon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -100px;
+  width: 200px;
+  height: 200px;
+  background: #c7cbd0;
+  border-radius: 50%;
+  box-shadow: inset -25px 0px 0 0px #9098a1;
+  transition: transform 0.2s ease-in-out;
+}
+
+.moon:hover {
+  transform: scale(1.2);
+}
+.moon li {
+  position: absolute;
+  list-style: none;
+  background: #737277;
+  border-radius: 50%;
+}
+.moon li:nth-child(1) {
+  left: 25px;
+  top: 60px;
+  width: 50px;
+  height: 50px;
+  box-shadow: inset 6px -2px 0 0px #414043;
+}
+.moon li:nth-child(2) {
+  left: 150px;
+  top: 50px;
+  width: 25px;
+  height: 25px;
+  box-shadow: inset 3px -1px 0 0px #414043;
+}
+
+.moon li:nth-child(3) {
+  left: 100px;
+  top: 150px;
+  width: 25px;
+  height: 25px;
+  box-shadow: inset 3px -1px 0 0px #414043;
+}
+
+.moon li:nth-child(4) {
+  left: 50px;
+  top: 150px;
+  width: 12.5px;
+  height: 12.5px;
+  box-shadow: inset 2.4px -0.8px 0 0px #414043;
+}
+
+.moon li:nth-child(5) {
+  left: 87.5px;
+  top: 16.66666667px;
+  width: 12.5px;
+  height: 12.5px;
+  box-shadow: inset 2.4px -0.8px 0 0px #414043;
+}
+
+.moon li:nth-child(6) {
+  left: 114.28571429px;
+  top: 80px;
+  width: 12.5px;
+  height: 12.5px;
+  box-shadow: inset 2.4px -0.8px 0 0px #414043;
+}
+
+.moon li:nth-child(7) {
+  left: 181.81818182px;
+  top: 100px;
+  width: 12.5px;
+  height: 12.5px;
+  box-shadow: inset 2.4px -0.8px 0 0px #414043;
+}
