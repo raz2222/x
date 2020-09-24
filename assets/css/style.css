@@ -1727,7 +1727,8 @@ canvas {
     margin-top: 30px;
   }
   .loader {
-    transform-origin: 100% 600%;
-    margin-right: -8px;
+    transform-origin: 200% 600%;
+    margin-left: -60px;
+    margin-top: -20px;
   }
 }
