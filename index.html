@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title></title>
+    <title>PolyWeb | Web Development Agency</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="./assets/img/favicon.png" rel="icon" />
+    <link href="./assets/img/favicon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
@@ -36,22 +36,20 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="./load.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: Vesperr - v2.2.0
-  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body>
-    <!-- ======= Header ======= -->
+   
+       
+    <div class="loader"></div>
+  
+    
     <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center">
         <div class="logo mr-auto">
           <h1 class="text-light">
-            <a href="index.html"><span>RAZ AND NOAM</span></a>
+            <img src="./assets/img/favicon.png" alt="" >
+            <a href="index.html"><span></span></a>
           </h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -59,13 +57,14 @@
 
         <nav class="nav-menu d-none d-lg-block">
           <ul>
-            <li class="active"><a href="#index.html">Home</a></li>
+            <li class="active"><a href="{% url 'index' %}">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
 
-            <li class="get-started"><a href="#about">Get Started</a></li>
+            <li class="get-started"><a href="#contact">START A PROJECT</a></li>
+            <li class="elementor-widget-container"><div class="elementor-image"> <a href="https://wa.me/972508989062"> <img width="30" height="30" src="https://i0.wp.com/www.shakdan.co.il/wp-content/uploads/2019/10/Whatsapp-button-1.png?resize=150%2C150&amp;ssl=1" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" srcset="https://i0.wp.com/www.shakdan.co.il/wp-content/uploads/2019/10/Whatsapp-button-1.png?w=300&amp;ssl=1 300w, https://i0.wp.com/www.shakdan.co.il/wp-content/uploads/2019/10/Whatsapp-button-1.png?resize=150%2C150&amp;ssl=1 150w" sizes="(max-width: 50px) 100vw, 150px"> </a></div></li>
           </ul>
         </nav>
         <!-- .nav-menu -->
@@ -82,12 +81,15 @@
             id="main"
             class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
           >
-            <h1 data-aos="fade-up">Grow your business with Vesperr</h1>
+          
+            <h1 data-aos="fade-up">PolyWeb</h1>
             <h2 data-aos="fade-up" data-aos-delay="400">
-              We are team of talanted designers making websites with Bootstrap
+             <p>Web Development Agency,</p> We are digital architects.
             </h2>
             <div data-aos="fade-up" data-aos-delay="800">
-              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              <a href="#contact" class="btn-get-started scrollto"
+                >START A PROJECT</a
+              >
             </div>
           </div>
           <div
@@ -118,72 +120,7 @@
     <!-- End Hero -->
 
     <main id="main">
-      <!-- ======= Clients Section ======= -->
-      <section id="clients" class="clients clients">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="./assets/img/clients/html.svg"
-                class="img-fluid"
-                alt=""
-                data-aos="zoom-in"
-              />
-            </div>
 
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="assets/img/clients/css.svg"
-                class="img-fluid"
-                alt=""
-                data-aos="zoom-in"
-                data-aos-delay="100"
-              />
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="assets/img/clients/javascript.svg"
-                class="img-fluid"
-                alt=""
-                data-aos="zoom-in"
-                data-aos-delay="200"
-              />
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="assets/img/clients/Vue-JS-logo-vector-01.svg"
-                class="img-fluid"
-                alt=""
-                data-aos="zoom-in"
-                data-aos-delay="300"
-              />
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="assets/img/clients/file_type_django_icon_130645.png"
-                class="img-fluid"
-                alt=""
-                data-aos="zoom-in"
-                data-aos-delay="400"
-              />
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="assets/img/clients/python_18894.png"
-                class="img-fluid"
-                alt=""
-                data-aos="zoom-in"
-                data-aos-delay="500"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Clients Section -->
 
       <!-- ======= About Us Section ======= -->
       <section id="about" class="about">
@@ -194,22 +131,23 @@
 
           <div class="row content">
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+              <h2>Quality breeds quality.</h2>
+            <p>These are the things we stand for.</p>
               <ul>
                 <li>
-                  <i class="ri-check-double-line"></i> Ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat
+                  <i class="ri-check-double-line"></i> <p style="color: #FFA500">INNOVATION</p> Modern
+                  technology allows us to create immersive digital experiences
+                  for a wide range of devices.
                 </li>
                 <li>
-                  <i class="ri-check-double-line"></i> Duis aute irure dolor in
-                  reprehenderit in voluptate velit
+                  <i class="ri-check-double-line"></i> <p style="color: #FFA500">USER CENTERED DESIGN</p>We
+                  believe every digital experience should be elegant, intuitive,
+                  and enjoyable for it’s users.
                 </li>
                 <li>
-                  <i class="ri-check-double-line"></i> Ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat
+                  <i class="ri-check-double-line"></i><p style="color: #FFA500"> FORWARD THINKING
+                    DEVELOPMENT</p> Our development efforts are focused on high
+                  performance, reliability, and scalability.
                 </li>
               </ul>
             </div>
@@ -219,13 +157,14 @@
               data-aos-delay="300"
             >
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-              </p>
-              <a href="#" class="btn-learn-more">Learn More</a>
+                At PolyWeb we build and maintain the best websites and web apps
+                in the digital world, personalized and specially developed for
+                Our customers. </p><p> continuously improved process begins with a
+                digital strategy and ends with the launch of an exceptional web
+                product.</p> <p>Your website could be the next project
+                in our portfolio.</p>
+              
+              <a href="#contact" class="btn-learn-more">Learn More</a>
             </div>
           </div>
         </div>
@@ -241,7 +180,11 @@
               data-aos="fade-right"
               data-aos-delay="150"
             >
-              <img src="assets/img/hero-img.svg" alt="" class="img-fluid" />
+              <img
+                src="./assets/img/hero-img.svg"
+                alt=""
+                class="img-fluid"
+              />
             </div>
 
             <div
@@ -256,8 +199,7 @@
                       <i class="icofont-simple-smile"></i>
                       <span data-toggle="counter-up">1</span>
                       <p>
-                        <strong>Happy Clients</strong> consequuntur voluptas
-                        nostrum aliquid ipsam architecto ut.
+                        <strong>Happy Clients</strong> 
                       </p>
                     </div>
                   </div>
@@ -267,8 +209,7 @@
                       <i class="icofont-document-folder"></i>
                       <span data-toggle="counter-up">1</span>
                       <p>
-                        <strong>Projects</strong> adipisci atque cum quia
-                        aspernatur totam laudantium et quia dere tan
+                        <strong>Projects</strong> 
                       </p>
                     </div>
                   </div>
@@ -278,8 +219,7 @@
                       <i class="icofont-clock-time"></i>
                       <span data-toggle="counter-up">1</span>
                       <p>
-                        <strong>Years of experience</strong> aut commodi quaerat
-                        modi aliquam nam ducimus aut voluptate non vel
+                        <strong>Years of experience</strong> 
                       </p>
                     </div>
                   </div>
@@ -289,8 +229,7 @@
                       <i class="icofont-coffee-mug"></i>
                       <span data-toggle="counter-up">30</span>
                       <p>
-                        <strong>Cups of coffee</strong> rerum asperiores dolor
-                        alias quo reprehenderit eum et nemo pad der
+                        <strong>Cups of coffee</strong> 
                       </p>
                     </div>
                   </div>
@@ -317,11 +256,11 @@
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
               <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                <div class="icon"><i class="bx bx-code-block"></i></div>
+                <h4 class="title"><a href="">Web Development</a></h4>
                 <p class="description">
-                  Voluptatum deleniti atque corrupti quos dolores et quas
-                  molestias excepturi
+                  
+                  We create cool looking website or web applications that complements your brand.
                 </p>
               </div>
             </div>
@@ -330,11 +269,10 @@
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
               <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                <p class="description">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore
+                <div class="icon"><i class="bx bx-mobile-alt"></i></div>
+                <h4 class="title"><a href="">App Development</a></h4>
+                <p class="description">We Design and Build
+                  Web apps for iOS, Android and cross platform Apps.
                 </p>
               </div>
             </div>
@@ -343,11 +281,10 @@
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
               <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon"><i class="bx bx-tachometer"></i></div>
-                <h4 class="title"><a href="">Magni Dolores</a></h4>
+                <div class="icon"><i class='bx bx-store'></i></i></div>
+                <h4 class="title"><a href="">E-commerce</a></h4>
                 <p class="description">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia
+                  We offer A Complete e-commerce solutions.
                 </p>
               </div>
             </div>
@@ -356,76 +293,10 @@
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
               <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon"><i class="bx bx-world"></i></div>
-                <h4 class="title"><a href="">Nemo Enim</a></h4>
+                <div class="icon"><i class='bx bx-search-alt' ></i></i></div>
+                <h4 class="title"><a href="">SEO</a></h4>
                 <p class="description">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Services Section -->
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services">
-        <div class="container">
-          <div class="section-title" data-aos="fade-up">
-            <h2>What We Do</h2>
-            <p>We provide the full solution for digital products.</p>
-            <h6>These are the things we build best.</h6>
-          </div>
-
-          <div class="row">
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
-            >
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                <p class="description">
-                  Voluptatum deleniti atque corrupti quos dolores et quas
-                  molestias excepturi
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
-            >
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                <p class="description">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
-            >
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon"><i class="bx bx-tachometer"></i></div>
-                <h4 class="title"><a href="">Magni Dolores</a></h4>
-                <p class="description">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
-            >
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon"><i class="bx bx-world"></i></div>
-                <h4 class="title"><a href="">Nemo Enim</a></h4>
-                <p class="description">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis
+                  Search Engine Optimization, We improve search result rankings and acquiring additional traffic.
                 </p>
               </div>
             </div>
@@ -439,80 +310,73 @@
         <div class="container">
           <div class="section-title" data-aos="fade-up">
             <h2>Technology</h2>
-            <p>These are the Technologies we use</p>
+            <p>These are some of the Technologies we use</p>
           </div>
 
           <div class="row" data-aos="fade-up" data-aos-delay="300">
             <div class="col-lg-3 col-md-4">
               <div class="icon-box">
-                <i class="ri-html-line" style="color: #ffbb2c"></i>
-                <h3><a href="">Lorem Ipsum</a></h3>
+                <i class='bx bxl-html5'style="color: #EA6328" ></i>
+                
+                <h3><a href="">HTML5</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
               <div class="icon-box">
-                <i class="ri-bar-chart-box-line" style="color: #5578ff"></i>
-                <h3><a href="">Dolor Sitema</a></h3>
+                <i class='bx bxl-css3'style="color: #2866F0" ></i>                <h3><a href="">CSS3</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
               <div class="icon-box">
-                <i class="ri-calendar-todo-line" style="color: #e80368"></i>
-                <h3><a href="">Sed perspiciatis</a></h3>
+                <i class='bx bxl-javascript'style="color: #ffbb2c" ></i>                <h3><a href="">JavaScript</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
               <div class="icon-box">
-                <i class="ri-paint-brush-line" style="color: #e361ff"></i>
-                <h3><a href="">Magni Dolores</a></h3>
+                <i class='bx bxl-bootstrap'style="color: #612EAC" ></i>                <h3><a href="">Bootstrap</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
                 <i class="ri-database-2-line" style="color: #47aeff"></i>
-                <h3><a href="">Nemo Enim</a></h3>
+                <h3><a href="">Python</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
-                <i class="ri-gradienter-line" style="color: #ffa76e"></i>
-                <h3><a href="">Eiusmod Tempor</a></h3>
+                <i class='bx bxl-vuejs'style="color: #02C180" ></i>                <h3><a href="">VueJs</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
-                <i class="ri-file-list-3-line" style="color: #11dbcf"></i>
-                <h3><a href="">Midela Teren</a></h3>
+                <i class='bx bxl-react'style="color: #60DBFB" ></i>                <h3><a href="">ReactJs</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
-                <i class="ri-price-tag-2-line" style="color: #4233ff"></i>
-                <h3><a href="">Pira Neve</a></h3>
+                <i class="ri-price-tag-2-line" style="color: #151618"></i>
+                <h3><a href="">Django</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
-                <i class="ri-anchor-line" style="color: #b2904f"></i>
-                <h3><a href="">Dirada Pack</a></h3>
+                <i class='bx bxl-sass'style="color: #EBDEE4" ></i>                <h3><a href="">Sass</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
-                <i class="ri-disc-line" style="color: #b20969"></i>
-                <h3><a href="">Moton Ideal</a></h3>
+                <i class='bx bxl-wordpress'style="color: #20759A" ></i>                <h3><a href="">Wordpress</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
-                <i class="ri-base-station-line" style="color: #ff5828"></i>
-                <h3><a href="">Verdo Park</a></h3>
+                <i class='bx bxl-shopify'style="color: #96BF46" ></i>                <h3><a href="">Shopify</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
-                <i class="ri-fingerprint-line" style="color: #29cc61"></i>
-                <h3><a href="">Flavor Nivelanda</a></h3>
+                <i class="ri-fingerprint-line" style="color: #099DEC"></i>
+                <h3><a href="">Docker</a></h3>
               </div>
             </div>
           </div>
@@ -547,7 +411,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <img
-                  src="assets/img/portfolio/portfolio-1.jpg"
+                  src="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
                   class="img-fluid"
                   alt=""
                 />
@@ -556,9 +420,8 @@
                   <p>App</p>
                   <div class="portfolio-links">
                     <a
-                      href="assets/img/portfolio/portfolio-1.jpg"
-                      data-gall="portfolioGallery"
-                      class="venobox"
+                    href="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                    class="venobox"
                       title="App 1"
                       ><i class="bx bx-plus"></i
                     ></a>
@@ -573,8 +436,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
               <div class="portfolio-wrap">
                 <img
-                  src="assets/img/portfolio/portfolio-2.jpg"
-                  class="img-fluid"
+                src="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
@@ -582,9 +445,8 @@
                   <p>Web</p>
                   <div class="portfolio-links">
                     <a
-                      href="assets/img/portfolio/portfolio-2.jpg"
-                      data-gall="portfolioGallery"
-                      class="venobox"
+                    href="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                    class="venobox"
                       title="Web 3"
                       ><i class="bx bx-plus"></i
                     ></a>
@@ -599,8 +461,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <img
-                  src="assets/img/portfolio/portfolio-3.jpg"
-                  class="img-fluid"
+                src="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
@@ -608,9 +470,8 @@
                   <p>App</p>
                   <div class="portfolio-links">
                     <a
-                      href="assets/img/portfolio/portfolio-3.jpg"
-                      data-gall="portfolioGallery"
-                      class="venobox"
+                    href="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                    class="venobox"
                       title="App 2"
                       ><i class="bx bx-plus"></i
                     ></a>
@@ -625,8 +486,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <div class="portfolio-wrap">
                 <img
-                  src="assets/img/portfolio/portfolio-4.jpg"
-                  class="img-fluid"
+                src="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
@@ -634,9 +495,8 @@
                   <p>Card</p>
                   <div class="portfolio-links">
                     <a
-                      href="assets/img/portfolio/portfolio-4.jpg"
-                      data-gall="portfolioGallery"
-                      class="venobox"
+                    href="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                    class="venobox"
                       title="Card 2"
                       ><i class="bx bx-plus"></i
                     ></a>
@@ -651,8 +511,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
               <div class="portfolio-wrap">
                 <img
-                  src="assets/img/portfolio/portfolio-5.jpg"
-                  class="img-fluid"
+                src="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
@@ -660,9 +520,8 @@
                   <p>Web</p>
                   <div class="portfolio-links">
                     <a
-                      href="assets/img/portfolio/portfolio-5.jpg"
-                      data-gall="portfolioGallery"
-                      class="venobox"
+                    href="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                    class="venobox"
                       title="Web 2"
                       ><i class="bx bx-plus"></i
                     ></a>
@@ -677,8 +536,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <img
-                  src="assets/img/portfolio/portfolio-6.jpg"
-                  class="img-fluid"
+                src="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
@@ -686,9 +545,8 @@
                   <p>App</p>
                   <div class="portfolio-links">
                     <a
-                      href="assets/img/portfolio/portfolio-6.jpg"
-                      data-gall="portfolioGallery"
-                      class="venobox"
+                    href="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                    class="venobox"
                       title="App 3"
                       ><i class="bx bx-plus"></i
                     ></a>
@@ -703,8 +561,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <div class="portfolio-wrap">
                 <img
-                  src="assets/img/portfolio/portfolio-7.jpg"
-                  class="img-fluid"
+                src="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
@@ -712,9 +570,8 @@
                   <p>Card</p>
                   <div class="portfolio-links">
                     <a
-                      href="assets/img/portfolio/portfolio-7.jpg"
-                      data-gall="portfolioGallery"
-                      class="venobox"
+                    href="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                    class="venobox"
                       title="Card 1"
                       ><i class="bx bx-plus"></i
                     ></a>
@@ -729,8 +586,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <div class="portfolio-wrap">
                 <img
-                  src="assets/img/portfolio/portfolio-8.jpg"
-                  class="img-fluid"
+                src="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
@@ -738,9 +595,8 @@
                   <p>Card</p>
                   <div class="portfolio-links">
                     <a
-                      href="assets/img/portfolio/portfolio-8.jpg"
-                      data-gall="portfolioGallery"
-                      class="venobox"
+                    href="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                    class="venobox"
                       title="Card 3"
                       ><i class="bx bx-plus"></i
                     ></a>
@@ -755,8 +611,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
               <div class="portfolio-wrap">
                 <img
-                  src="assets/img/portfolio/portfolio-9.jpg"
-                  class="img-fluid"
+                src="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
@@ -764,8 +620,8 @@
                   <p>Web</p>
                   <div class="portfolio-links">
                     <a
-                      href="assets/img/portfolio/portfolio-9.jpg"
-                      data-gall="portfolioGallery"
+                    href="./assets/img/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif"
+                    data-gall="portfolioGallery"
                       class="venobox"
                       title="Web 3"
                       ><i class="bx bx-plus"></i
@@ -796,23 +652,18 @@
               data-aos-delay="100"
             >
               <div class="contact-about">
-                <h3>Vesperr</h3>
+                <h3>Let's build together.</h3>
                 <p>
-                  Cras fermentum odio eu feugiat. Justo eget magna fermentum
-                  iaculis eu non diam phasellus. Scelerisque felis imperdiet
-                  proin fermentum leo. Amet volutpat consequat mauris nunc
-                  congue.
+                  Our headquarters are in israel and we work with Clients located around the world. </P><p>If you are looking for a quote on a new project, fill out the form here.
                 </p>
                 <div class="social-links">
-                  <a href="#" class="twitter"
-                    ><i class="icofont-twitter"></i
-                  ></a>
-                  <a href="#" class="facebook"
-                    ><i class="icofont-facebook"></i
-                  ></a>
-                  <a href="#" class="instagram"
-                    ><i class="icofont-instagram"></i
-                  ></a>
+                 
+                  <a href="https://fb.me/polyweb2" class="facebook"
+                  ><i class="icofont-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/poly.web/" class="instagram"
+                  ><i class="icofont-instagram"></i
+                ></a>
                   <a href="#" class="linkedin"
                     ><i class="icofont-linkedin"></i
                   ></a>
@@ -826,93 +677,54 @@
               data-aos-delay="200"
             >
               <div class="info">
+               
+
                 <div>
-                  <i class="ri-map-pin-line"></i>
-                  <p>A108 Adam Street<br />New York, NY 535022</p>
+                  <i class="ri-mail-send-line"></i><a href="mailto:WebPoly2@gamil.com?subject=your title&body=Your message">
+                    <p>WebPoly2@gamil.com</p>
+                </a>
+
                 </div>
 
                 <div>
-                  <i class="ri-mail-send-line"></i>
-                  <p>info@example.com</p>
-                </div>
-
-                <div>
-                  <i class="ri-phone-line"></i>
-                  <p>+1 5589 55488 55s</p>
+                  <i class="ri-phone-line"></i><a href="https://api.whatsapp.com/send?phone=972508989062">
+                  <p>+972 508989062 </p>
+                  </a>
                 </div>
               </div>
             </div>
-
-            <div
-              class="col-lg-5 col-md-12"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                class="php-email-form"
-              >
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    id="name"
-                    placeholder="Your Name"
-                    data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars"
-                  />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    name="email"
-                    id="email"
-                    placeholder="Your Email"
-                    data-rule="email"
-                    data-msg="Please enter a valid email"
-                  />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
-                    data-rule="minlen:4"
-                    data-msg="Please enter at least 8 chars of subject"
-                  />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    rows="5"
-                    data-rule="required"
-                    data-msg="Please write something for us"
-                    placeholder="Message"
-                  ></textarea>
-                  <div class="validate"></div>
-                </div>
-                <div class="mb-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
+            
+              <div class="col-lg-5 col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
                   </div>
-                </div>
-                <div class="text-center">
-                  <button type="submit">Send Message</button>
-                </div>
-              </form>
-            </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validate"></div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit">Send Message</button>
+                  </div>
+                </form>
+              </div>
+          </div>
           </div>
         </div>
       </section>
@@ -926,19 +738,19 @@
         <div class="row d-flex align-items-center">
           <div class="col-lg-6 text-lg-left text-center">
             <div class="copyright">
-              &copy; Copyright <strong>raznoam</strong>. All Rights Reserved
+              &copy; Copyright <strong>PolyWeb</strong>. All Rights Reserved
             </div>
             <div class="credits">
               <!-- All the links in the footer should remain intact. -->
               <!-- You can delete the links only if you purchased the pro version. -->
               <!-- Licensing information: https://bootstrapmade.com/license/ -->
               <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
-              Designed by <a href="https://bootstrapmade.com/">raznoam</a>
+              Designed by <a href="#hero">PolyWeb</a>
             </div>
           </div>
           <div class="col-lg-6">
             <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-              <a href="#intro" class="scrollto">Home</a>
+              <a href="#hero" class="scrollto">Home</a>
               <a href="#about" class="scrollto">About</a>
               <a href="#">Privacy Policy</a>
               <a href="#">Terms of Use</a>
@@ -948,7 +760,6 @@
       </div>
     </footer>
     <!-- End Footer -->
-
     <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
     <!-- Vendor JS Files -->
